@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario con CSS y validaciones JS</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Formulario de Registro</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Nombre" >
+      <input type="email" id="email" placeholder="Correo electrónico">
+      <input type="password" id="password" placeholder="Contraseña">
+      <input type="submit" value="Registrar">
+    </form>
+    <div id="error" class="error"></div>
+  </div>
+
+  <script src="validacion.js"></script>
+</body>
+</html>
